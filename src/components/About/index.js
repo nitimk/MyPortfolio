@@ -1,7 +1,7 @@
  import { faAngular, faCss3, faGitAlt, faHtml5, faJsSquare, faReact } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useEffect, useState } from 'react'
-import Loader from 'react-loaders'
+// import Loader from 'react-loaders'
 import AnimatedLetters from '../AnimatedLetters'
 import './index.scss'
 const About = () => {
@@ -17,6 +17,7 @@ const About = () => {
       <div className="text-zone">
         <h1>
           <AnimatedLetters
+            className="AboutMe-classname"
              letterClass={letterClass}
             strArray={['A', 'b', 'o', 'u', 't', ' ', 'm', 'e']}
             idx={15}
@@ -62,7 +63,7 @@ const About = () => {
       </div>
 
     </div>
-    <Loader type='pacman' />
+    {/* <Loader type='pacman' /> */}
     </>
   )
 }

@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
-import Loader from 'react-loaders'
+// import Loader from 'react-loaders'
 import AnimatedLetters from '../AnimatedLetters'
 import './index.scss'
 import emailjs from '@emailjs/browser'
@@ -110,7 +110,7 @@ const Contact = () => {
         </div>
       </div>
 
-      <Loader type="pacman" />
+      {/* <Loader type="pacman" /> */}
     </>
   )
 }
