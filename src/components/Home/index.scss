@@ -18,7 +18,7 @@
     &::before {
       content: '<h1>';
       font-family: 'La Belle Aurore';
-      color: #b6510d;
+      color: #fffdd0;
       font-size: 20px;
       position: absolute;
       margin-top: -40px;
@@ -29,11 +29,11 @@
     &::after {
       content: '</h1>';
       font-family: 'La Belle Aurore';
-      color: #b6510d;
+      color: #fffdd0;
       font-size: 20px;
       position: absolute;
       margin-top: 10px;
-      margin-left: 0.0.5px;
+      margin-left: 0.5px;
       animation: fadeIn 2s 2.5s backwards;
       opacity: 0.75;
     }
@@ -81,4 +81,8 @@
       color: #fffdd0;
     }
   }
+  // .coding {
+  //  position: relative;
+  //  margin-right: 500%;
+  // }
 }

@@ -1,10 +1,11 @@
-import LogoTitle from '../../assets/images/n.png'
+// import LogoTitle from '../../assets/images/n.png'
 import { Link } from 'react-router-dom'
 import './index.scss'
 import { useEffect, useState } from 'react'
 import AnimatedLetters from '../AnimatedLetters'
 //import Logo from './Logo'
 import Loader from 'react-loaders'
+// import coding from '../../assets/images/coding.png'
 
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -51,6 +52,7 @@ const Home = () => {
             <span className={`${letterClass} _13`}>'</span>
             <span className={`${letterClass} _14`}>m</span>
             <span className={`${letterClass} _14`}> </span>
+            {/* <img  className= "coding" src={coding} alt= "coding"></img> */}
             {/* <img src={LogoTitle} alt="developer" /> */}
             <AnimatedLetters
               letterClass={letterClass}
@@ -77,6 +79,9 @@ const Home = () => {
           </Link>
         </div>
       </div>
+      {/* <div className= "coding">
+      <img src={coding} alt= "coding"></img>
+      </div> */}
       
       <Loader type="ball-clip-rotate-multiple" />
     </>

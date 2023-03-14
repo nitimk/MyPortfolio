@@ -1,5 +1,5 @@
 .nav{
-  background: #181818;    //color of sidebar
+  background:#abcecf;    //color of sidebar
   width: 100px;
   height: 100%;
   position: absolute;
@@ -35,7 +35,7 @@
 
       a{
           font-size: 30px;
-          color: #fffdd0;
+          color: #fffdd0; 
           display: block;
           line-height: 70px;
           height: 70px;
@@ -47,7 +47,7 @@
       }
 
       &:hover {
-          color: #b6510d;
+          color: #222831;
       
 
       svg{
@@ -100,7 +100,7 @@
 
   a.active{
       svg{
-          color: #b6510d;
+          color: #222831;
       }
   }
   
@@ -124,7 +124,7 @@
               line-height: 16px;
 
               &:hover svg{
-                  color:#b6510d
+                  color:#222831; //linkdin / git 
               }
           }
       }

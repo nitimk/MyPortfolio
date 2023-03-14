@@ -55,14 +55,14 @@ const SideBar = () => (
         <a
           target="_blank"
           rel="noreferrer"
-          href="https://www.linkedin.com/in/nicholas-masters2002/"
+          href="https://www.linkedin.com/in/nitimk/"
         >
           <FontAwesomeIcon icon={faLinkedin} color="#fffdd0" />
         </a>
       </li>
 
       <li>
-        <a target="_blank" rel="noreferrer" href="https://github.com/nixkhm">
+        <a target="_blank" rel="noreferrer" href="https://github.com/nitimk">
           <FontAwesomeIcon icon={faGithub} color="#fffdd0" />
         </a>
       </li>

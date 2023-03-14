@@ -1,10 +1,10 @@
 import { useEffect, useState } from 'react'
 import AnimatedLetters from '../AnimatedLetters'
-//import './index.scss'
+import './index.scss'
 import Loader from 'react-loaders'
-// import pacman from '../../assets/imgs/Pacman.png'
-// import sorting from '../../assets/imgs/Sorting.png'
-// import port from '../../assets/imgs/port.png'
+import Todo_List from '../../assets/images/Todo_List.png'
+import ExpenseTracker from '../../assets/images/ExpenseTracker.png'
+import Amazon from '../../assets/images/Amazon.png'
 
 const Projects = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -36,9 +36,9 @@ const Projects = () => {
                 <a
                   target="_blank"
                   rel="noreferrer"
-                  href="https://nixkhm.github.io/Pacman-Clone/"
+                  href="https://github.com/nitimk/ToDo_List"
                 >
-                  {/* <img src={pacman} /> */}
+                  <img src={Todo_List}  alt="ToDoList"/>
                 </a>
               </li>
 
@@ -46,17 +46,19 @@ const Projects = () => {
                 <a
                   target="_blank"
                   rel="noreferrer"
-                  href="https://nixkhm.github.io/Sorting-Algorithm-Visualizer/"
+                  href="https://budget-expense-tracker.netlify.app/"
                 >
-                  {/* <img src={sorting} /> */}
+                  <img src={ExpenseTracker}  alt= "ExpenseTracker"/>
                 </a>
               </li>
+
+              
             </ul>
 
             <ul className="row1">
               <li>
-                <a target="_blank" rel="noreferrer" href="/">
-                  {/* <img src={port} /> */}
+                <a target="_blank" rel="noreferrer" href="https://github.com/nitimk/Amazon">
+                  <img src={Amazon} alt="Amazon Clone" />
                 </a>
               </li>
             </ul>

@@ -1,16 +1,16 @@
-.page{
+.page {
   width: 100%;
   height: 100%;
   position: absolute;
 }
 
-.top-tags{
+.top-tags {
   bottom: auto;
   top: 35px;
 }
 
-.tags{
-  color: #b6510d;
+.tags {
+  color: #fffdd0;
   opacity: 0.75;
   position: absolute;
   bottom: 0;
@@ -19,11 +19,11 @@
   font-family: 'La Belle Aurore';
 }
 
-.bottom-tag-html{
+.bottom-tag-html {
   margin-left: -10px;
 }
 
-.container{
+.container {
   width: 100%;
   will-change: contents;
   height: 90%;
@@ -41,9 +41,7 @@
 .container.contact-page,
 .container.about-page,
 .container.portfolio-page,
-.container.project-page
-{
-
+.container.project-page {
   h1 {
     text-align: center;
     font-size: 70px;
@@ -59,7 +57,7 @@
     &:before {
       content: '<h1>';
       font-family: 'La Belle Aurore', cursive;
-      color: #b6510d;
+      color: #fffdd0;
       font-size: 18px;
       position: absolute;
       margin-left: 10px;
@@ -71,7 +69,7 @@
     &:after {
       content: '<h1/>';
       font-family: 'La Belle Aurore', cursive;
-      color: #b6510d;
+      color: #fffdd0;
       font-size: 18px;
       line-height: 18px;
       position: absolute;
@@ -83,38 +81,38 @@
   }
 
   p {
-      text-align: center;
-      font-size: 25px;
-      color: #b6510d;
-      font-family: 'Coolvetica';
-      font-weight: 300;
-      max-width: fit-content;
-      animation: pulse 1s;
-      &:nth-of-type(1) {
-          animation-delay: 1.1s;
-      }
-      &:nth-of-type(2) {
-          animation-delay: 1.3s;
-      }
-      &:nth-of-type(3) {
-          animation-delay: 1.5s;
-      }
-      }
+    text-align: center;
+    font-size: 25px;
+    color: #fffdd0;
+    font-family: 'Coolvetica';
+    font-weight: 300;
+    max-width: fit-content;
+    animation: pulse 1s;
+    &:nth-of-type(1) {
+      animation-delay: 1.1s;
+    }
+    &:nth-of-type(2) {
+      animation-delay: 1.3s;
+    }
+    &:nth-of-type(3) {
+      animation-delay: 1.5s;
+    }
+  }
 
   .text-zone {
-      position: absolute;
-      left: 10%;
-      top: 50%;
-      transform: translateY(-50%);
-      width: 35%;
-      vertical-align: middle;
-      display: table-cell;
-      max-height: 90%;
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 35%;
+    vertical-align: middle;
+    display: table-cell;
+    max-height: 90%;
   }
 
   .text-animate-hover {
-      &:hover {
+    &:hover {
       color: #b6510d;
-      }
+    }
   }
 }
