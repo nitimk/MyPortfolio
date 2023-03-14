@@ -1,70 +1,72 @@
-import { Link, NavLink } from 'react-router-dom'
 import './index.scss'
-import LogoS from '../../assets/images/n.png'
-import LogoSubtitle from '../../assets/images/name.png'
+import { Link, NavLink } from 'react-router-dom'
+import LogoN from '../../assets/images/n.png'
+import LogoSubtitle from '../../assets/images/logo_sub.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelope, faHome, faUser } from '@fortawesome/free-solid-svg-icons'
 import {
-  faDiscord,
-  faGithub,
-  faLinkedin,
-} from '@fortawesome/free-brands-svg-icons'
+  faEnvelope,
+  faHome,
+  faUser,
+  faDiagramProject,
+} from '@fortawesome/free-solid-svg-icons'
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
 const SideBar = () => (
-  <div className="nav-bar">
+  <div className="nav">
     <Link className="logo" to="/">
-      <img src={LogoS} alt="logo" />
-      <img className="sub-logo" src={LogoSubtitle} alt="slobodan" />
+      <img src={LogoN} alt="nick masters logo" />
+      <img className="logoSubtitle" src={LogoSubtitle} alt="nick masters" />
     </Link>
     <nav>
       <NavLink exact="true" activeclassname="active" to="/">
-        <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
+        <FontAwesomeIcon icon={faHome} color="#fffdd0" />
       </NavLink>
+
       <NavLink
         exact="true"
         activeclassname="active"
         className="about-link"
         to="/about"
       >
-        <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
+        <FontAwesomeIcon icon={faUser} color="#fffdd0" />
       </NavLink>
+
+      <NavLink
+        exact="true"
+        activeclassname="active"
+        className="projects-link"
+        to="/projects"
+      >
+        <FontAwesomeIcon icon={faDiagramProject} color="#fffdd0" />
+      </NavLink>
+
       <NavLink
         exact="true"
         activeclassname="active"
         className="contact-link"
         to="/contact"
       >
-        <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
+        <FontAwesomeIcon icon={faEnvelope} color="#fffdd0" />
       </NavLink>
     </nav>
+
     <ul>
       <li>
         <a
           target="_blank"
           rel="noreferrer"
-          href="https://www.linkedin.com/in/niti-patel-57a840209/"
+          href="https://www.linkedin.com/in/nicholas-masters2002/"
         >
-          <FontAwesomeIcon icon={faLinkedin} color="#4d4d4e" />
+          <FontAwesomeIcon icon={faLinkedin} color="#fffdd0" />
         </a>
       </li>
 
       <li>
-        <a target="_blank" rel="noreferrer" href="https://github.com/nitimk">
-          <FontAwesomeIcon icon={faGithub} color="#4d4d4e" />
-        </a>
-      </li>
-
-      <li>
-        <a
-          target="_blank"
-          rel="noreferrer"
-          href="https://discord.com/channels/@me"
-        >
-          <FontAwesomeIcon icon={faDiscord} color="#4d4d4e" />
+        <a target="_blank" rel="noreferrer" href="https://github.com/nixkhm">
+          <FontAwesomeIcon icon={faGithub} color="#fffdd0" />
         </a>
       </li>
     </ul>
   </div>
 )
-
 export default SideBar
